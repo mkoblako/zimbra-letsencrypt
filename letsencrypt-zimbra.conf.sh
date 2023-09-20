@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get domain for cert
-PRINCIPAL=$(/opt/zimbra/bin/zmprov gad)
+PRINCIPAL="fqdn"
 #ADDITIONAL="another.fqdn, another.fqdn" 
 #CN=$PRINCIPAL", "$ADDITIONAL
 CN="$PRINCIPAL"
