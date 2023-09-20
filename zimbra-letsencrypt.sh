@@ -241,3 +241,11 @@ service "$zimbra_service" restart || {
     error "Restarting zimbra service failed."
     exit 5
 }
+# Путь к скрипту обновления сертификата
+SCRIPT_PATH="/etc/zimbra-letsencrypt/zimbra-letsencrypt.sh"
+
+# Путь к конфигурационному файлу
+CONFIG_PATH="/etc/zimbra-letsencrypt/letsencrypt-zimbra.conf.sh"
+
+# Добавить задачу в крон для автоматического обновления каждые 2 месяца
+(crontab -l ; echo "0 0 1 */2 * $SCRIPT_PATH --renew $CONFIG_PATH") | crontab -
