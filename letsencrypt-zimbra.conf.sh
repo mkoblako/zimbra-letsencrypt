@@ -2,11 +2,11 @@
 
 # get domain for cert
 PRINCIPAL="fqdn"
-#ADDITIONAL="another.fqdn, another.fqdn" 
-#CN=$PRINCIPAL", "$ADDITIONAL
-CN="$PRINCIPAL"
+ADDITIONAL="another.fqdn, another.fqdn" 
+CN=$PRINCIPAL", "$ADDITIONAL
+#CN="$PRINCIPAL"
 # zimbra-letsencrypt folder
-letsencrypt_zimbra_dir="/usr/bin/zimbra-letsencrypt"
+letsencrypt_zimbra_dir="/etc/zimbra-letsencrypt"
 
 # letsencrypt tool
 letsencrypt="/usr/bin/certbot"
