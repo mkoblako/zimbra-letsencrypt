@@ -1,4 +1,4 @@
-zimbra-letsencrypt.sh - Генерирует/обновляет letsencrypt сертификаты.
+zimbra-letsencrypt.sh --register-unsafely-without-email - Генерирует/обновляет letsencrypt сертификаты.
 Для использования требуется выполнить:
 yum install git epel-release
 yum install certbot
