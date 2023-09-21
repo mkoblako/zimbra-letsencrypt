@@ -187,7 +187,7 @@ readable_file "$root_CA_file" || {
 if [ "$renew_cert" == "no" ]; then
     
     # generate a new certificate
-    "$letsencrypt" certonly --standalone --preferred-challenge http-01 --agree-tos --text -d "$CN"  || {
+    "$letsencrypt" certonly --standalone --preferred-challenge http-01 --agree-tos --register-unsafely-without-email --text -d "$CN"  || {
         error "The certificate cannot be obtained with '$letsencrypt' tool."
         start_nginx
         exit 4
