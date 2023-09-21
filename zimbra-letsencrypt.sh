@@ -39,7 +39,7 @@ USAGE="USAGE
 # --------------------------------------------------------------------
 
 # use default config file if nothing is declared
-config_file="letsencrypt-zimbra.conf"
+config_file="letsencrypt-zimbra.conf.sh"
 
 # generating a new certificate by default if the --renew is not passed
 renew_cert="no"
