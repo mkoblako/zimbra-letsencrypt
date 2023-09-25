@@ -2,7 +2,7 @@
 
 # get domain for cert
 PRINCIPAL="fqdn"
-ADDITIONAL="another.fqdn, another.fqdn" 
+ADDITIONAL="" 
 CN=$PRINCIPAL", "$ADDITIONAL
 #CN="$PRINCIPAL"
 # zimbra-letsencrypt folder
